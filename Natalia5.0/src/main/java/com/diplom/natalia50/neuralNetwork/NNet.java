@@ -49,5 +49,6 @@ public class NNet extends NeuralNetwork {
         ((LMS) nnet.getLearningRule()).setMaxIterations(maxIterations);//0-1
         NormalizeData(trainingSet);
         Natalia.learn(trainingSet);
+        //предположение: после тренировки надо ее сохранять обратно в файл
     }
 }
